@@ -1,0 +1,455 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* section */
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.sp-logo {
+  width: 13rem;
+  animation: hideAndShow 2s ease-in-out 1s infinite;
+}
+
+.event-tips {
+  margin-left: 3%;
+}
+.promo-carousel,
+.event-tips-content {
+  width: 100% !important;
+  overflow-x: auto;
+  display: flex;
+}
+
+.promo-carousel::-webkit-scrollbar,
+.event-tips-content::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.promo-carousel::-webkit-scrollbar-thumb,
+.event-tips-content::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color of the thumb */
+}
+
+.promo-carousel::-webkit-scrollbar-track,
+.event-tips-content::-webkit-scrollbar-track {
+  background-color: transparent; /* Color of the track */
+}
+
+.img-promo-carousel,
+.img-tips-carousel {
+  width: 100%;
+}
+
+@keyframes hideAndShow {
+  0% {
+    width: 13rem;
+  }
+  50% {
+    width: 18rem;
+  }
+  100% {
+    width: 13rem;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* navbar */
+nav {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.lp-menu {
+  font-weight: 1000 !important;
+  color: black;
+}
+
+/* jumbotron */
+.custom-carousel-control {
+  background-color: white;
+}
+
+.lp-card {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  z-index: 100;
+}
+
+.lp-card-button {
+  background-color: #dc3545 !important;
+  color: white;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  border-radius: 10%;
+  transform: translateY(0.5rem);
+}
+
+.lp-card-title {
+  font-weight: 1000 !important;
+  color: black;
+}
+
+.lp-btn-card {
+  width: 1rem;
+  height: 1rem;
+  border: 0;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-btn-card i {
+  font-size: 0.6rem;
+}
+.card-position {
+  position: absolute;
+  top: 20rem;
+  right: 0;
+  left: 0;
+}
+
+.lp-card-text {
+  font-size: 0.8rem;
+}
+.lp-cek-tarif-input {
+  font-size: 0.8rem !important;
+}
+
+.btn {
+  font-size: 0.8rem !important;
+}
+
+/* promo menarik */
+.promo-menarik {
+  margin-top: 10rem;
+}
+
+.promo-menarik-title,
+.event-title {
+  font-weight: bolder !important;
+  font-size: 1.5rem !important;
+}
+
+/* download  */
+.lp-app-img {
+  width: 100%;
+}
+.lp-app-download {
+  overflow: hidden;
+}
+.lp-app-img-logo {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin: 0 0.3rem;
+}
+.lp-app-download-content {
+  width: 50% !important;
+}
+.lp-app-img-logo:hover {
+  transform: scale(1.1);
+}
+
+.lp-app-download-title {
+  font-weight: 600 !important;
+}
+
+.lp-app-download-title {
+  color: #b82025;
+}
+
+.lp-app-download-subtitle {
+  width: 75%;
+}
+
+/* event and tips */
+.event-title {
+  font-weight: 600 !important;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-tips {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.event-card {
+  position: relative;
+}
+
+.event-card-img {
+  border-radius: 0.5rem;
+}
+.content-tips-subtitle {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  font-weight: 800 !important;
+}
+
+/* jasa pengiriman */
+.jasa-pengiriman {
+  margin: 4rem 8rem !important;
+}
+.jasa-pengiriman-title {
+  width: 100%;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 600 !important;
+  line-height: 3rem;
+}
+
+.jasa-pengiriman-subtitle {
+  font-size: 1.2rem;
+}
+
+.jasa-pengiriman-img {
+  width: 90%;
+}
+
+/* mengapa kami */
+
+.mengapa-kami {
+  margin: 0 3rem !important;
+}
+.mengapa-kami-title {
+  font-weight: 600 !important;
+  margin-bottom: 3rem;
+}
+
+.mengapa-kami-img {
+  width: 25%;
+}
+
+.mengapa-kami-content-title {
+  font-weight: 1000 !important;
+}
+
+.mengapa-kami-content-subtitle {
+  font-weight: 700 !important;
+  font-size: 0.9rem;
+}
+
+.mengapa-kami-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.mengapa-kami-content-text {
+  font-size: 0.75rem;
+}
+
+/* Biodata Pages */
+.biodata {
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  animation: showBiodata 1s ease-in-out;
+  margin-top: 10rem !important;
+  margin-left: 3rem;
+  margin-bottom: 3rem !important;
+}
+.my-photo {
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.biodata-title {
+  font-weight: 600 !important;
+  font-size: 1.7rem;
+}
+
+.biodata-subtitle {
+  font-size: 1.2rem;
+}
+
+.biodata-deskripsi-title {
+  font-weight: 600 !important;
+  font-size: 1.2rem;
+}
+
+.biodata-content {
+  width: 50%;
+}
+
+@keyframes showBiodata {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* footer */
+footer {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.footer-title {
+  font-size: 0.8rem;
+}
+
+.lp-footer-title {
+  font-weight: 1000 !important;
+  font-size: 0.85rem;
+}
+
+.lp-footer-subtitle {
+  font-size: 0.8rem;
+}
+
+.contact-us-title {
+   font-weight: 600 !important;
+    font-size: .8rem;
+}
+
+.contact-us-subtitle {
+  font-size: 0.75rem;
+}
+
+/* contact us */
+.form-contanct {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.freepage {
+  height: 100vh;
+}
+
+.coming-soon {
+  font-size: 4rem;
+  font-weight: 700 !important;
+  animation: coming-soon-animate 2s ease-in-out;
+}
+
+.contact-us-form {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 3rem;
+}
+
+.contact-us {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.contact-us-page-title{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .card-position {
+    position: absolute;
+    top: 8.5rem;
+    right: 0;
+    left: 0;
+    width: 86%;
+    margin: 1.5rem;
+  }
+
+  .promo-menarik {
+    margin-top: 37rem;
+  }
+
+  .lp-app-download-content {
+    width: 100% !important;
+  }
+
+  .promo-menarik-title {
+    font-size: 0.7rem !important;
+  }
+  .lp-app-download-title {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+
+  .lp-app-download-subtitle {
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .mengapa-kami-card {
+    width: 80% !important;
+    margin-top: 2rem !important;
+  }
+
+  .jasa-pengiriman-title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .jasa-pengiriman {
+    margin: 4rem 0 !important;
+  }
+
+  .jasa-pengiriman-subtitle {
+    font-size: 0.9rem;
+  }
+  .jasa-pengiriman-img {
+    width: 100%;
+  }
+  .biodata-content {
+    width: 90%;
+  }
+  .biodata-title {
+    font-size: 1.3rem;
+  }
+  .lp-card {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 25%;
+    z-index: 10;
+  }
+  .mengapa-kami {
+    margin: 0 !important;
+  }
+  .biodata {
+    margin-left: 0;
+  }
+}

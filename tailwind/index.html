@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jasa pengiriman barang ongkir murah dan cepat</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://lionparcel.com/img/lp_logo_red.6140e1e4.svg" class="h-8" alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-dropdown" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Layanan Kami</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Promo</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Event & Tips</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Bermitra</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Informasi Lain</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Klaim</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">menu saya
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="./Biodata.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Biodata</a>
+                                    </li>
+                                    <li>
+                                        <a href="./contact_us.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="./freepage.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">freepage</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fti.unai.edu/" target="_blank"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FTI Unai</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fti.unai.edu/" target="_blank"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">UNAI</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <!-- Carousel -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://storage.googleapis.com/lionparcel-web-stg/banner/image/7426-1693542388"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://storage.googleapis.com/lionparcel-web-stg/banner/image/3376-1698035083"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://storage.googleapis.com/lionparcel-web-stg/banner/image/6152-1696564592"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://storage.googleapis.com/lionparcel-web-stg/banner/image/9081-1701407720"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- card -->
+    <div class="grid lp-card grid-cols-1 md:grid-cols-3 gap-4 mx-4">
+        <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <p class=" lp-card-title">Lacak Pengiriman</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 md:flex">
+            <input type="text" id="email"
+                class="bg-gray-50 mt-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Masukkan Nomor Resi atau STT" required>
+        
+            <button type="button" class="lp-card-button">
+                Lacak
+            </button>
+        </div>
+            
+        </div>
+        <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <p class=" lp-card-title">Cek Tarif</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 md:flex">
+                <input type="text" id="email"
+                    class="bg-gray-50 mt-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="" required>
+            
+                <button type="button" class="lp-card-button">
+                    Cek
+                </button>
+            </div>
+        </div>
+        <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <p class=" lp-card-title">Lokasi Agen</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 md:flex">
+                <input type="text" id="email"
+                    class="bg-gray-50 mt-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Kecamatan/Kota" required>
+            
+                <button type="button" class="lp-card-button">
+                    Lacak
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Menarik -->
+    <div class="promo-menarik px-5 mb-5">
+    <div class="flex justify-between">
+        <h4 class="promo-menarik-title px-3 mb-3">Ada Promo Menarik, Lho!</h4>
+        <h4 class="text-red-600 promo-menarik-title">Lihat Semua ></h4>
+    </div>
+    <div class="flex promo-carousel">
+        <div>
+            <img class="img-promo-carousel px-3" src="https://storage.googleapis.com/lionparcel-web-stg/program/image/4637-1701412774" alt="">
+        </div>
+        <div>
+            <img class="img-promo-carousel px-3" src="https://storage.googleapis.com/lionparcel-web-stg/program/image/5232-1701837488" alt="">
+        </div>
+        <div>
+            <img class="img-promo-carousel px-3" src="https://storage.googleapis.com/lionparcel-web-stg/program/image/7378-1699586429" alt="">
+        </div>
+        <div>
+            <img class="img-promo-carousel px-3" src="https://storage.googleapis.com/lionparcel-web-stg/program/image/3477-1696487358" alt="">
+        </div>
+    </div>
+    </div>
+
+    <!-- app -->
+    <div class="download-lion-parcel container mx-auto flex flex-wrap">
+        <div class="lp-app-download w-full sm:w-1/2">
+            <img src="https://lionparcel.com/img/lion-parcel-app.05946cc4.webp" alt="" class="lp-app-img w-full">
+        </div>
+        <div class="lp-app-download-content w-full sm:w-1/2 flex justify-center flex-col">
+            <h2 class="lp-app-download-title text-2xl font-bold mb-3">Download Lion Parcel Sekarang</h2>
+            <p class="pt-3 lp-app-download-subtitle">Aplikasi Jasa Pengiriman yang bisa kirim paket atau barang, serta lacak
+                pengiriman Anda secara realtime dan mudah hanya di Aplikasi Lion Parcel</p>
+            <div class="lp-app-download-logo flex">
+                <img class="w-1/4 lp-app-img-logo" src="https://lionparcel.com/img/playstore.6837ec16.png" alt="">
+                <img class="w-1/4 lp-app-img-logo" src="https://lionparcel.com/img/appstore.edc76194.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- tips -->
+
+    <div class="event-tips mt-5">
+        <h4 class="event-title mb-5">Event & Tips</h4>
+        <div class="flex event-tips-content">
+            <div class="event-card mx-2">
+                <img class="event-card-img"
+                    src="https://storage.googleapis.com/lionparcel-web-stg/event_tips/image/7228-1701772148" alt="">
+                <div class="content-tips">
+                    <p class="text-white p-3 content-tips-subtitle">Temukan Cara Mengetahui Tarif Kirim Paket Agar
+                        Pengiriman Makin Efisien</p>
+                </div>
+            </div>
+            <div class="event-card mx-2">
+                <img class="event-card-img"
+                    src="https://storage.googleapis.com/lionparcel-web-stg/event_tips/image/3667-1701665630" alt="">
+                <div class="content-tips">
+                    <p class="text-white p-3 content-tips-subtitle">Mitra Agen Lion Parcel Ini Sukses Raih Omzet Fantastis
+                        Perbulan</p>
+                </div>
+            </div>
+            <div class="event-card mx-2">
+                <img class="event-card-img"
+                    src="https://storage.googleapis.com/lionparcel-web-stg/event_tips/image/5575-1701673455" alt="">
+                <div class="content-tips">
+                    <p class="text-white p-3 content-tips-subtitle">Mau Sukses Bisnis Fashion? Sweater Bisa Dongkrak Omset
+                        Bisnismu!</p>
+                </div>
+            </div>
+            <div class="event-card mx-2">
+                <img class="event-card-img"
+                    src="https://storage.googleapis.com/lionparcel-web-stg/event_tips/image/1954-1701426965" alt="">
+                <div class="content-tips">
+                    <p class="text-white p-3 content-tips-subtitle">Cara Menemukan Ekspedisi Terdekat yang Terpercaya</p>
+                </div>
+            </div>
+            <div class="event-card mx-2">
+                <img class="event-card-img"
+                    src="https://storage.googleapis.com/lionparcel-web-stg/event_tips/image/2833-1701423060" alt="">
+                <div class="content-tips">
+                    <p class="text-white p-3 content-tips-subtitle">Cara Hitung Volume Terbaru BIGPACK Lion Parcel, Jadi
+                        Makin Murah</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jasa Pengiriman -->
+    <div class="jasa-pengiriman grid grid-cols-1 md:grid-cols-2 my-5">
+        <div class="">
+            <h2 class="jasa-pengiriman-title">
+                Jasa pengiriman
+                <span class="text-red-600">Tercepat</span> dan
+                <span class="text-danger">Menjangkau</span> seluruh pelosok
+                <span class="text-danger">Indonesia</span> menggunakan akomodasi pesawat
+            </h2>
+    
+            <p class="jasa-pengiriman-subtitle">
+                Dengan Lion Parcel, pengiriman aman, murah, cepat dan terjamin sampai ke tempat tujuan di seluruh lokasi
+                Indonesia maupun internasional, yang didukung oleh akomodasi pesawat Lion Group.
+            </p>
+        </div>
+        <div class="flex items-center">
+            <img class="jasa-pengiriman-img" src="https://lionparcel.com/img/plane-lion-air.70acffe3.svg" alt="">
+        </div>
+    </div>
+
+    <!-- mengapa Kami -->
+    <div class="mengapa-kami my-5 container">
+        <h5 class="mengapa-kami-title">Mengapa Kami ?</h5>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 my-5">
+            <div class="mengapa-kami-card flex p-3 mx-4">
+                <img src="https://lionparcel.com/img/why_us_1.652f4176.svg" class="mengapa-kami-img" alt="">
+                <div class="px-3">
+                    <h5 class="mengapa-kami-content-title text-danger">Reliable</h5>
+                    <p class="mengapa-kami-content-subtitle">Customer Service Bisa diandalkan</p>
+                    <p class="mengapa-kami-content-text">Pantau, cari informasi produk maupun klaim melalui customer care
+                        Lion Parcel dengan mudah. Hubungi CS kami di +62-21-80820072.</p>
+                </div>
+            </div>
+            <div class="mengapa-kami-card flex p-3 mx-4">
+                <img src="https://lionparcel.com/img/why_us_2.c4c433f9.svg" alt="" class="mengapa-kami-img">
+                <div class="px-3">
+                    <h5 class="mengapa-kami-content-title text-danger">Fast</h5>
+                    <p class="mengapa-kami-content-subtitle">Paket Cepat Sampai, Langsung ke Rumahmu</p>
+                    <p class="mengapa-kami-content-text">Menjangkau lebih cepat dengan dukungan armada pesawat dan frekuensi
+                        penerbangan yang tinggi dari Lion Group.</p>
+                </div>
+            </div>
+            <div class="mengapa-kami-card flex p-3 mx-4">
+                <img src="https://lionparcel.com/img/why_us_3.d70a8dcd.svg" class="mengapa-kami-img" alt="">
+                <div class="px-3">
+                    <h5 class="mengapa-kami-content-title text-danger">Afordable</h5>
+                    <p class="mengapa-kami-content-subtitle">Kirim Tanpa Mikir, Lebih Hemat dan Jemput Tanpa Minimal Biaya
+                    </p>
+                    <p class="mengapa-kami-content-text">Kirim paket sebanyak apapun tanpa takut dengan biaya pengiriman dan
+                        tanpa biaya jemput. Mengirim paket lebih hemat dengan Lion Parcel.</p>
+                </div>
+            </div>
+            <div class="mengapa-kami-card flex p-3 mx-4">
+                <img src="https://lionparcel.com/img/why_us_4.82f24200.svg" alt="" class="mengapa-kami-img">
+                <div class="px-3">
+                    <h5 class="mengapa-kami-content-title text-danger">Connected</h5>
+                    <p class="mengapa-kami-content-subtitle">Menjangkau ke seluruh nusantara.</p>
+                    <p class="mengapa-kami-content-text">Dengan lebih dari 7000 mitra tersebar di seluruh nusantara, kirim
+                        ke mana saja di seluruh Indonesia maupun ke luar negri.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-5 gap-8">
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <img src="https://lionparcel.com/img/lp_logo_footer.1f096aa1.svg" alt="">
+                <p class="footer-title mt-2">Jl. Agave Raya No. 55, Kedoya Selatan, Jakarta Barat, 11520</p>
+                <div class="logo flex flex-wrap mt-2">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_insta.36ab5897.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_twitter.2f0c6bd9.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_facebook.e5a49ee4.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_youtube.c966c19a.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_linkedin.a8385b5a.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_tiktok.160025b9.svg" alt="">
+                </div>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title">Lion Parcel</h6>
+                <p class="my-1 lp-footer-subtitle">Promo</p>
+                <p class="my-1 lp-footer-subtitle">Event & Tips</p>
+                <h6 class="mt-4 lp-footer-title">Tentang Kami</h6>
+                <p class="my-1 lp-footer-subtitle">Profil Perusahaan</p>
+                <p class="my-1 lp-footer-subtitle">Karir</p>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title">Layanan Kami</h6>
+                <p class="my-1 lp-footer-subtitle">Pengiriman</p>
+                <p class="my-1 lp-footer-subtitle">Fulfillment</p>
+                <h6 class="mt-4 lp-footer-title">Bermitra</h6>
+                <p class="my-1 lp-footer-subtitle">Daftar Agen</p>
+                <p class="my-1 lp-footer-subtitle">Daftar Korporasi</p>
+                <p class="my-1 lp-footer-subtitle">Daftar Merchant</p>
+                <h6 class="lp-footer-title mt-4">Informasi Lain</h6>
+                <p class="my-1 lp-footer-subtitle">FAQ</p>
+                <p class="my-1 lp-footer-subtitle">Dangerous Goods</p>
+                <p class="my-1 lp-footer-subtitle">Karantina</p>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title">Contact Us</h6>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-solid fa-location-dot px-2"></i> Head Office</h6>
+                    <p class="px-4 contact-us-subtitle">Jl. Agave Raya No. 55, Kedoya Selatan, Jakarta Barat, 11520</p>
+                </div>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-regular fa-comment-dots px-2"></i> Customer Service</h6>
+                    <p class="px-4 contact-us-subtitle">+62-21-80820072</p>
+                </div>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-regular fa-envelope px-2"></i> Mitra</h6>
+                    <p class="px-4 contact-us-subtitle">help@thelionparcel.com</p>
+                </div>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-regular fa-clock px-2"></i> Monday on Sunday</h6>
+                    <p class="px-4 contact-us-subtitle">07:00 AM to 23:00 PM</p>
+                </div>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title mb-3">Dapatkan Aplikasinya</h6>
+                <img src="https://lionparcel.com/img/playstore.d430fb69.webp" alt="" class="lp-app-img-logo m-2 w-75">
+                <img src="https://lionparcel.com/img/appstore.595fc5b0.webp" alt="" class="lp-app-img-logo m-2 w-75">
+            </div>
+        </div>
+        <hr class="container">
+        <div class="footer-copyrigth p-3">
+            <p class="text-center">@ 2020-2023 All Rights Reserved - Lion Parcel</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+</html>

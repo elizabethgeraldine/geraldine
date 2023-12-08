@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jasa pengiriman barang ongkir murah dan cepat</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://lionparcel.com/img/lp_logo_red.6140e1e4.svg" class="h-8" alt="Flowbite Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-dropdown" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-dropdown" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Layanan
+                                Kami</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Promo</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Event
+                                & Tips</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Bermitra</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Informasi
+                                Lain</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Klaim</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">menu
+                                saya
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="./Biodata.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Biodata</a>
+                                    </li>
+                                    <li>
+                                        <a href="./contact_us.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact
+                                            Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="./freepage.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">freepage</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fti.unai.edu/" target="_blank"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FTI
+                                            Unai</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fti.unai.edu/" target="_blank"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">UNAI</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+   
+    <div class="freepage flex items-center justify-center flex-col">
+       
+    </div>
+
+    <footer>
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-5 gap-8">
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <img src="https://lionparcel.com/img/lp_logo_footer.1f096aa1.svg" alt="">
+                <p class="footer-title mt-2">Jl. Agave Raya No. 55, Kedoya Selatan, Jakarta Barat, 11520</p>
+                <div class="logo flex flex-wrap mt-2">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_insta.36ab5897.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_twitter.2f0c6bd9.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_facebook.e5a49ee4.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_youtube.c966c19a.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_linkedin.a8385b5a.svg" alt="">
+                    <img class="m-2" src="https://lionparcel.com/img/sm_tiktok.160025b9.svg" alt="">
+                </div>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title">Lion Parcel</h6>
+                <p class="my-1 lp-footer-subtitle">Promo</p>
+                <p class="my-1 lp-footer-subtitle">Event & Tips</p>
+                <h6 class="mt-4 lp-footer-title">Tentang Kami</h6>
+                <p class="my-1 lp-footer-subtitle">Profil Perusahaan</p>
+                <p class="my-1 lp-footer-subtitle">Karir</p>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title">Layanan Kami</h6>
+                <p class="my-1 lp-footer-subtitle">Pengiriman</p>
+                <p class="my-1 lp-footer-subtitle">Fulfillment</p>
+                <h6 class="mt-4 lp-footer-title">Bermitra</h6>
+                <p class="my-1 lp-footer-subtitle">Daftar Agen</p>
+                <p class="my-1 lp-footer-subtitle">Daftar Korporasi</p>
+                <p class="my-1 lp-footer-subtitle">Daftar Merchant</p>
+                <h6 class="lp-footer-title mt-4">Informasi Lain</h6>
+                <p class="my-1 lp-footer-subtitle">FAQ</p>
+                <p class="my-1 lp-footer-subtitle">Dangerous Goods</p>
+                <p class="my-1 lp-footer-subtitle">Karantina</p>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title">Contact Us</h6>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-solid fa-location-dot px-2"></i> Head Office</h6>
+                    <p class="px-4 contact-us-subtitle">Jl. Agave Raya No. 55, Kedoya Selatan, Jakarta Barat, 11520</p>
+                </div>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-regular fa-comment-dots px-2"></i> Customer Service</h6>
+                    <p class="px-4 contact-us-subtitle">+62-21-80820072</p>
+                </div>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-regular fa-envelope px-2"></i> Mitra</h6>
+                    <p class="px-4 contact-us-subtitle">help@thelionparcel.com</p>
+                </div>
+                <div class="contact-us-content mt-3">
+                    <h6 class="contact-us-title"><i class="fa-regular fa-clock px-2"></i> Monday on Sunday</h6>
+                    <p class="px-4 contact-us-subtitle">07:00 AM to 23:00 PM</p>
+                </div>
+            </div>
+            <div class="col-span-full sm:col-span-1 lg:col-span-1">
+                <h6 class="lp-footer-title mb-3">Dapatkan Aplikasinya</h6>
+                <img src="https://lionparcel.com/img/playstore.d430fb69.webp" alt="" class="lp-app-img-logo m-2 w-75">
+                <img src="https://lionparcel.com/img/appstore.595fc5b0.webp" alt="" class="lp-app-img-logo m-2 w-75">
+            </div>
+        </div>
+        <hr class="container">
+        <div class="footer-copyrigth p-3">
+            <p class="text-center">@ 2020-2023 All Rights Reserved - Lion Parcel</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script>
+        var words = ['Coming Soon And See You Again', 'Elizabeth Geraldine Sitorus Pane', ':)'],
+            part,
+            i = 0,
+            offset = 0,
+            len = words.length,
+            forwards = true,
+            skip_count = 0,
+            skip_delay = 15,
+            speed = 70;
+
+        var wordflick = function () {
+            setInterval(function () {
+                if (forwards) {
+                    if (offset >= words[i].length) {
+                        ++skip_count;
+                        if (skip_count == skip_delay) {
+                            forwards = false;
+                            skip_count = 0;
+                        }
+                    }
+                } else {
+                    if (offset == 0) {
+                        forwards = true;
+                        i++;
+                        offset = 0;
+                        if (i >= len) {
+                            i = 0;
+                        }
+                    }
+                }
+                part = words[i].substr(0, offset);
+                if (skip_count == 0) {
+                    if (forwards) {
+                        offset++;
+                    } else {
+                        offset--;
+                    }
+                }
+                document.querySelector('.freepage').textContent = part;
+                document.querySelector('.freepage').style.color = 'red';
+                document.querySelector('.freepage').style.fontWeight = '600';
+                document.querySelector('.freepage').style.fontSize = '3rem';
+            }, speed);
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            wordflick();
+        });
+
+    </script>
+</body>
+
+</html>
